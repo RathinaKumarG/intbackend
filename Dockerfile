@@ -1,4 +1,4 @@
-FROM php:7.2-cli
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-CMD [ "php", "./index.php"]
+FROM wyveo/nginx-php-fpm
+#RUN rm -rf /usr/share/nginx/html/index.php
+COPY index.php /usr/share/nginx/html
+

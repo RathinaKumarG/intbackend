@@ -2,9 +2,9 @@
 $pdo=null;
 
 
-$dbhost = "localhost";
- $dbuser = "phpadmin";
- $dbpass = "php@1234";
+$dbhost = "mysql.default.svc.cluster.local";
+ $dbuser = "root";
+ $dbpass = "";
  $db = "employeedb";
  try {
          
